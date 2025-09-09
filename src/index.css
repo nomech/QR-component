@@ -1,68 +1,55 @@
+@font-face {
+	font-family: 'outfit';
+	src: url('/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	/* COLORS */
+	--slate-900: #1f314f;
+	--slate-500: #68778d;
+	--slate-300: #d5e1ef;
+	--white: #ffffff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	/* Text Preset 1 */
+	--preset1-size: 22px;
+	--preset1-line-height: 120%;
+	--preset1-spacing: 0px;
+	--preset1-weight: 700;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+	/* Text Preset 2 */
+	--preset2-size: 15px;
+	--preset2-line-height: 140%;
+	--preset2-spacing: 0.2px;
+	--preset2-weight: 400;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+	/* Spaceing */
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	--space-500: 40px;
+	--space-300: 24px;
+	--space-200: 16px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: var(--font-family-outfit);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Typography Presets */
+.text-preset-1 {
+	font-weight: var(--preset1-weight);
+	font-size: var(--preset1-size);
+	line-height: var(--preset1-line-height);
+	letter-spacing: var(--preset1-spacing);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.text-preset-2 {
+	font-weight: var(--preset2-weight);
+	font-size: var(--preset2-size);
+	line-height: var(--preset2-line-height);
+	letter-spacing: var(--preset2-spacing);
 }
