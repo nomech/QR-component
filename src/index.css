@@ -1,15 +1,20 @@
 @font-face {
-	font-family: 'outfit';
-	src: url('/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+	font-family: 'Outfit';
+	src: url('./assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
 	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 :root {
-	/* COLORS */
+	/* Colors */
 	--slate-900: #1f314f;
 	--slate-500: #68778d;
 	--slate-300: #d5e1ef;
 	--white: #ffffff;
+
+	/* Font */
+	--font-family-outfit: 'Outfit';
 
 	/* Text Preset 1 */
 	--preset1-size: 22px;
@@ -18,10 +23,10 @@
 	--preset1-weight: 700;
 
 	/* Text Preset 2 */
-	--preset2-size: 15px;
+	--preset2-size: 16px;
 	--preset2-line-height: 140%;
 	--preset2-spacing: 0.2px;
-	--preset2-weight: 400;
+	--preset2-weight: 300;
 
 	/* Spaceing */
 
@@ -37,19 +42,4 @@
 	border: 0;
 	outline: 0;
 	font-family: var(--font-family-outfit);
-}
-
-/* Typography Presets */
-.text-preset-1 {
-	font-weight: var(--preset1-weight);
-	font-size: var(--preset1-size);
-	line-height: var(--preset1-line-height);
-	letter-spacing: var(--preset1-spacing);
-}
-
-.text-preset-2 {
-	font-weight: var(--preset2-weight);
-	font-size: var(--preset2-size);
-	line-height: var(--preset2-line-height);
-	letter-spacing: var(--preset2-spacing);
 }
